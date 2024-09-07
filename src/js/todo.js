@@ -53,9 +53,6 @@ input.addEventListener('keyup', (e) => {
 })
 
 
-
-
-
 // Через Input:checkbox
 // const inpId = document.querySelectorAll('input')
 
