@@ -44,10 +44,16 @@ input.addEventListener('keyup', function (e) {
   allTasks.querySelectorAll('.task').forEach(function (elem) {
     if (!elem.querySelector('.task-text').textContent.toLowerCase().includes(input.value.toLowerCase())) {
       elem.classList.add('hidden');
-    } else if (elem.classList.contains('hidden')) {
+    } else {
       elem.classList.remove('hidden');
     }
   });
+  var poi = allTasks.querySelector('h2.hidden') ? 1 : 0;
+  if (allTasks.querySelectorAll('.hidden').length - poi == allTasks.querySelectorAll('.task').length) {
+    allTasks.querySelector('h2').classList.remove('hidden');
+  } else {
+    allTasks.querySelector('h2').classList.add('hidden');
+  }
 });
 
 // Через Input:checkbox
