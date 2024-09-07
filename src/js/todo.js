@@ -1,7 +1,5 @@
-const divBlock = document.querySelectorAll('.task-check')
 const pinnedTask = document.querySelector('.pinned')
 const allTasks = document.querySelector('.all')
-const tasks = document.querySelectorAll('.tasks')
 const input = document.querySelector('#tasks-value')
 const blog = document.querySelector('.blog')
 
